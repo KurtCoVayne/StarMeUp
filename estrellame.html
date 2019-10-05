@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
     <meta charset="UTF-8">
@@ -10,24 +10,25 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body class="bg-primary">
+<body class="bg-primary h-100">
     <div class="row h-100">
-        <div class="col-6 mx-auto my-auto">
-            <div class="card mt-4">
-                <div class="card-header">
-                    <h1 class=" text-center font-weight-bold font-italic">Estrell<span class="text-primary"><img
-                                src="star-regular.svg" alt="☆" width="35px" height="35px"
+        <div class="col-5 mx-auto my-auto ">
+            <div class="card mt-4 p-4">
+                <!-- <div class="card-header"> -->
+                    <h1 class="text-center font-weight-bold font-italic display-4">Estrell<span class="text-primary"><img
+                                src="star-regular.svg" alt="☆" width="65px" height="65px"
                                 style="transform:rotate(10deg)"></span>me</h1>
-                </div>
-                <div class="card-body">
+                <!-- </div> -->
+                <div class="card-body text-center">
                     <form action="/users/ingresar" method="POST" autocomplete="off">
-                        <h6 class="text-center">Ingresa tu correo para iniciar</h6>
+                        <h4 class="mb-2">Ingresa tu correo para iniciar</h4>
                         
                         <div class="form-group mt-4">
                             <input type="email" class="form-control" name="email" placeholder="Correo" autofocus=""
                                 required="">
                         </div>
                     </form>
+                    <button type="submit" class="btn btn-primary m-4"><strong class="h4 mt-2">Ingresar</strong></button>
                 </div>
             </div>
         </div>
