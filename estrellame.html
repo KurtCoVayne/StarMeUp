@@ -11,15 +11,19 @@
 </head>
 
 <body class="bg-primary">
-    <div class="row">
-        <div class="col-md-8 mx-auto">
-            <div class="card mt-4 text-center">
+    <div class="row h-100">
+        <div class="col-6 mx-auto my-auto">
+            <div class="card mt-4">
                 <div class="card-header">
-                    <h1 class="font-weight-bold font-italic">Estrell<span class="text-primary font-italic"><img src="star-regular.svg" alt="☆" width="40px" height="45px"></span>me</h1>
+                    <h1 class=" text-center font-weight-bold font-italic">Estrell<span class="text-primary"><img
+                                src="star-regular.svg" alt="☆" width="35px" height="35px"
+                                style="transform:rotate(10deg)"></span>me</h1>
                 </div>
                 <div class="card-body">
                     <form action="/users/ingresar" method="POST" autocomplete="off">
-                        <div class="form-group">
+                        <h6 class="text-center">Ingresa tu correo para iniciar</h6>
+                        
+                        <div class="form-group mt-4">
                             <input type="email" class="form-control" name="email" placeholder="Correo" autofocus=""
                                 required="">
                         </div>
