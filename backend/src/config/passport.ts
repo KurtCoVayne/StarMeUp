@@ -1,9 +1,11 @@
 import { Strategy, ExtractJwt } from 'passport-jwt'
-import User, { getUserById, IUser } from '../models/User'
+import { getUserById, IUser } from '../models/User'
 import { PassportStatic } from 'passport'
-
+import dotenv from 'dotenv'
+import {secret} from './secret'
+dotenv.config()
 const opts = {
-    secretOrKey: process.env.SECRET || 'kurtcovayne4',
+    secretOrKey: secret || 'kurtcovayne4',
     // jwtFromRequest: ExtractJwt.fromHeader('Authorization')
     jwtFromRequest: ExtractJwt.fromAuthHeaderWithScheme('jwt'),
     // jwtFromRequest: ExtractJwt.fromBodyField('token'),

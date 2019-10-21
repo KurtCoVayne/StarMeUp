@@ -7,9 +7,7 @@ import passport from 'passport'
 import mongoose from 'mongoose'
 import cors from 'cors'
 import path from 'path'
-
-import dotenv from 'dotenv'
-dotenv.config()
+import { mongo_uri } from './config/secret'
 
 class Server {
     app: express.Application
@@ -21,7 +19,7 @@ class Server {
     config() {
         //Database
         const MONGO_URI = 'mongodb://localhost/starmeup'
-        mongoose.connect(process.env.MONGODB_URL || MONGO_URI , {
+        mongoose.connect(mongo_uri || MONGO_URI , {
             useFindAndModify:false,
             useUnifiedTopology:true,
             useNewUrlParser: true,

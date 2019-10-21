@@ -7,7 +7,7 @@ class IndexRoutes {
     }
 
     routing(){
-        this.router.get('/',(req,res) => res.send('Api: /api/stars'))
+        this.router.get('*',(req,res) => res.send('Api: /api/stars'))
     }
 }
 
