@@ -115,4 +115,9 @@
     left: 0;
 }
 
+.full-modal{
+    max-width: none;
+    width:95%;
+    margin:auto;
+}
 /*# sourceMappingURL=bootstrap.min.css.map */
