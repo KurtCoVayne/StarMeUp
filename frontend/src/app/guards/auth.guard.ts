@@ -16,7 +16,7 @@ export class AuthGuard implements CanActivate {
           return true;
       } else {
           this.router.navigate(['/login']);
-          this.flashMessages.show(`Debes iniciar sesión`, { cssClass: 'alert-danger mt-2', timeout: 3000 });
+          this.flashMessages.show(`Debes iniciar sesión`, { cssClass: 'alert-danger mt-2 d-block w-100', timeout: 3000 });
           return false;
       }
   }

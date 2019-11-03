@@ -27,10 +27,10 @@ export class LoginComponent implements OnInit {
     this.authService.authenticateUser(user).subscribe(response => {
       if (response.ok) {
         this.authService.storeUserData(response.data.token, response.data.user);
-        this.flashMessages.show(`You're now logged in`, { cssClass: 'alert-success mt-2', timeout: 5000 });
+        this.flashMessages.show(`Has iniciado sesión correctamente!`, { cssClass: 'alert-success mt-2 w-100', timeout: 5000 });
         this.router.navigate(['/']);
       } else {
-        this.flashMessages.show('Error iniciando sesión', { cssClass: 'alert-danger mt-2', timeout: 5000 });
+        this.flashMessages.show('Error iniciando sesión', { cssClass: 'alert-danger mt-2 w-100', timeout: 5000 });
         this.router.navigate(['/login']);
       }
     });

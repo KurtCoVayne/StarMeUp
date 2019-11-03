@@ -62,36 +62,57 @@
     width: 32%;
     height: 100%;
 }
-.tab-link{
+
+.tab-link {
     background-color: rgba(233, 236, 241, 0.34);
     display: block;
     padding: .5rem 1rem;
     font-weight: 700;
-    color:var(--gray)
+    color: var(--gray)
 }
-.tab-link.active, .tab-link:active{
+
+.tab-link.active, .tab-link:active {
     color: var(--primary);
     background-color: rgb(233, 236, 241);
     border-bottom: 2px solid var(--primary);
 }
-.tab-link.hover, .tab-link:hover{
+
+.tab-link.hover, .tab-link:hover {
     text-decoration: none
 }
-.mw-10{
+
+.mw-10 {
     min-width: 10%;
 }
-.mxs-6{
+
+.mxs-6 {
     max-height: 6%;
     max-width: 6%;
 }
-.mxp{
+
+.mxp {
     min-width: 35px;
     min-height: 35px;
 }
-.w-35{
+
+.w-35 {
     width: 35;
 }
-.form-control{
+
+.form-control {
     margin-bottom: 1.0rem;
 }
+
+.flash-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+:host(.flash-message) {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 /*# sourceMappingURL=bootstrap.min.css.map */
